@@ -1,0 +1,6 @@
+master:
+  ports:
+  - "8080:8080"
+worker:
+  links:
+  - master

@@ -8,6 +8,3 @@ ENV SPARK_FILE_NAME spark-${SPARK_VERSION}-bin-hadoop2.4
 
 ADD http://d3kbcqa49mib13.cloudfront.net/${SPARK_FILE_NAME}.tgz /tmp/
 RUN cd /usr/local && tar xzf /tmp/${SPARK_FILE_NAME}.tgz && mv ${SPARK_FILE_NAME} spark && rm /tmp/${SPARK_FILE_NAME}.tgz
-
-COPY spark-defaults.conf /usr/local/spark/conf/
-ENTRYPOINT ["/usr/local/spark/sbin/start-master.sh"]
