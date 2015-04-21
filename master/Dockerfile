@@ -1,4 +1,4 @@
-FROM eaglechen/spark-base
+FROM eaglechen/docker-spark:base
 MAINTAINER Eagle Chen <chygr1234@gmail.com>
 
 COPY master.sh /master.sh

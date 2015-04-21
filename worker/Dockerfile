@@ -1,4 +1,4 @@
-FROM eaglechen/spark-base
+FROM eaglechen/docker-spark:base
 MAINTAINER Eagle Chen <chygr1234@gmail.com>
 
 ENV SPARK_WORKER_PORT=8888

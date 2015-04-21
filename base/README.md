@@ -10,6 +10,6 @@ docker image tags : `latest`
 You can use the following command to pull the images:
 
 ```
-docker pull eaglechen/spark-master
-docker pull eaglechen/spark-worker
+docker pull eaglechen/docker-spark:master
+docker pull eaglechen/docker-spark:worker
 ```
